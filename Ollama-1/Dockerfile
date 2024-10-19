@@ -59,3 +59,6 @@ CMD [ "echo", "Successfully installed!" ]
 ## curl commands for testing. 
 #> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3.1",  "prompt":"What is water?"}'
 #> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3",  "prompt":"What is water?"}'
+
+#TO REMOVE the STREAM
+#> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3.1",  "prompt":"What is water?", "stream":false}'
